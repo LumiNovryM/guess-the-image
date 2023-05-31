@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('image/Hero-Image.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 500px;
+    width: 1200px;
+    /* background-color: salmon; */
+    display: flex;
+    flex-direction: row;
+}
+
+.desc {
+    width: 50%;
+    /* background-color: blue; */
+    padding: 15px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.desc h1 {
+    font-family: 'Poppins';
+    color: #fff;
+    /* background-color: red; */
+}
+
+.desc p{
+    font-family: 'Poppins';
+    /* background-color: red; */
+    color: #979a9c;
+    margin-top: 18px;
+}
+
+.desc button{
+    margin-top: 18px;
+    padding: 10px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* background-color: red; */
+}
+
+.image img {
+    width: 650px;
+}
+
+/* Container Animation */
+.loader{
+    display: none;
+}
+
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+  }
+.loader:before,.loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 1s spin linear infinite;
+}
+.loader:after {
+    color: #1db4f5;
+    transform: rotateY(70deg);
+    animation-delay: .4s;
+}
+
+@keyframes rotate {
+0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+}
+100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+}
+}
+
+@keyframes rotateccw {
+0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+}
+}
+
+@keyframes spin {
+0%,
+100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+}
+12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+}
+25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+}
+37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+}
+50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+}
+62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+}
+75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+}
+87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+}
+}
+
+/* Container Input Name */
+.inputName{
+    background-color: #282a37;
+    display: none;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.inputName p{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Container Guess Image */
+.guessImage{
+    width: 100vw;
+    height: 100vh;
+}
