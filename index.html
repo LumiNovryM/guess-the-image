@@ -31,18 +31,233 @@
     </div>
 
     <div class="inputName" id="inputName">
-        <p>Masukkan Namamu!</p>
+        <h1>Masukkan Namamu!</h1>
+        <img src="./asset/image/User.png" alt="User">
         <input type="text" id="nama">
+        <button id="startAttention">Selanjutnya</button>
     </div>
 
-    <!-- <div class="guessImage">
-        <div class="field">
+    <div class="attention" id="attention">
+        <h1 id="greet"></h1>
+        <p>Sebelum bermain kamu akan diberikan 3 nyawa dan waktu 1 menit, Adapun materi yang diberikan adalah materi sejarah untuk SMA/SMK kelas 10, Semangat!!!</p>
+        <button id="QuestionStart">Start</button>
+    </div>
 
+    <div class="guessImage" id="guessImage">
+        <div class="timer">
+            <ion-icon name="alarm"></ion-icon>
+            <p id="timer"></p>
         </div>
-    </div> -->
+        <div class="nyawa">
+            <ion-icon name="heart"></ion-icon>
+            <p id="nyawaUI"></p>
+        </div>
+
+        <div class="pertanyaan1" id="pertanyaan1">
+            <div class="image1">
+                <img src="./asset/image/pantai.png" alt="Pantai">
+                <p>+</p>
+                <img src="./asset/image/katak.png" alt="Katak">
+                <p>+</p>
+                <img src="./asset/image/ayam.png" alt="Ayam">
+            </div>
+            <div class="jawaban1">
+                <input type="text" id="jawaban1">
+                <button id="checkjawaban1">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan2" id="pertanyaan2">
+            <div class="image2">
+                <img src="./asset/image/anjing.png" alt="Anjing">
+                <p>+</p>
+                <img src="./asset/image/es-gunung.png" alt="Gunung">
+                <p>+</p>
+                <img src="./asset/image/pki.png" alt="PKI">
+            </div>
+            <div class="jawaban2">
+                <input type="text" id="jawaban2">
+                <button id="checkjawaban2">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan3" id="pertanyaan3">
+            <div class="image3">
+                <img src="./asset/image/dipa.png" alt="Desa">
+                <p>+</p>
+                <img src="./asset/image/nusantara.png" alt="Nusantara">
+                <p>+</p>
+                <img src="./asset/image/aidiit.png" alt="Aidit">
+            </div>
+            <div class="jawaban3">
+                <input type="text" id="jawaban3">
+                <button id="checkjawaban3">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan4" id="pertanyaan4">
+            <div class="image4">
+                <img src="./asset/image/chakra.png" alt="Chakra">
+                <p>+</p>
+                <img src="./asset/image/rawa.png" alt="Rawa">
+            </div>
+            <div class="jawaban4">
+                <input type="text" id="jawaban4">
+                <button id="checkjawaban4">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan5" id="pertanyaan5">
+            <div class="image5">
+                <img src="./asset/image/susu.png" alt="Susu">
+                <p>+</p>
+                <img src="./asset/image/harta.png" alt="Harta">
+            </div>
+            <div class="jawaban5">
+                <input type="text" id="jawaban5">
+                <button id="checkjawaban5">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan6" id="pertanyaan6">
+            <div class="image6">
+                <img src="./asset/image/jendral.png" alt="Jendral">
+                <p>+</p>
+                <img src="./asset/image/ah.png" alt="Ahha">
+                <p>+</p>
+                <img src="./asset/image/nasution.png" alt="Nasa">
+                <p>+</p>
+                <img src="./asset/image/spion.png" alt="Spion">
+            </div>
+            <div class="jawaban6">
+                <input type="text" id="jawaban6">
+                <button id="checkjawaban6">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan7" id="pertanyaan7">
+            <div class="image7">
+                <img src="./asset/image/ada.png" alt="Ada">
+                <p>+</p>
+                <img src="./asset/image/rima.png" alt="Rima">
+            </div>
+            <div class="jawaban7">
+                <input type="text" id="jawaban7">
+                <button id="checkjawaban7">Check</button>
+            </div>
+        </div>
+        
+        <div class="pertanyaan8" id="pertanyaan8">
+            <div class="image8">
+                <img src="./asset/image/pir.png" alt="Pir">
+                <p>+</p>
+                <img src="./asset/image/tenda.png" alt="Tenda">
+            </div>
+            <div class="jawaban8">
+                <input type="text" id="jawaban8">
+                <button id="checkjawaban8">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan9" id="pertanyaan9">
+            <div class="image9">
+                <img src="./asset/image/sakit.png" alt="Sakit">
+                <p>+</p>
+                <img src="./asset/image/superman.png" alt="SuperMan">
+            </div>
+            <div class="jawaban9">
+                <input type="text" id="jawaban9">
+                <button id="checkjawaban9">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan10" id="pertanyaan10">
+            <div class="image10">
+                <img src="./asset/image/letkol.png" alt="Letkol" class="letkol">
+                <p>+</p>
+                <img src="./asset/image/untung.png" alt="Untung" class="stonk">
+            </div>
+            <div class="jawaban10">
+                <input type="text" id="jawaban10">
+                <button id="checkjawaban10">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan11" id="pertanyaan11">
+            <div class="image11">
+                <img src="./asset/image/jendral-a-y.png" alt="Jendral">
+                <p>+</p>
+                <img src="./asset/image/ahmaf.png" alt="Raffi Ahmad">
+                <p>+</p>
+                <img src="./asset/image/yani.png" alt="Yani">
+            </div>
+            <div class="jawaban11">
+                <input type="text" id="jawaban11">
+                <button id="checkjawaban11">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan12" id="pertanyaan12">
+            <div class="image12">
+                <img src="./asset/image/brigadir.png" alt="Brigra">
+                <p>+</p>
+                <img src="./asset/image/mcdonal.png" alt="Macdonal">
+                <p>+</p>
+                <img src="./asset/image/isaac.png" alt="Isaac">
+                <p>+</p>
+                <img src="./asset/image/panjaitan.png" alt="Penjahit">
+            </div>
+            <div class="jawaban12">
+                <input type="text" id="jawaban12">
+                <button id="checkjawaban12">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan13" id="pertanyaan13">
+            <div class="image13">
+                <img src="./asset/image/lubang.png" alt="Lubang">
+                <p>+</p>
+                <img src="./asset/image/buaya.png" alt="Buaya">
+            </div>
+            <div class="jawaban13">
+                <input type="text" id="jawaban13">
+                <button id="checkjawaban13">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan14" id="pertanyaan14">
+            <div class="image14">
+                <img src="./asset/image/barisan.png" alt="Barisan">
+                <p>+</p>
+                <img src="./asset/image/tani.png" alt="Tani">
+                <p>+</p>
+                <img src="./asset/image/indonesia.png" alt="Indonesia">
+            </div>
+            <div class="jawaban14">
+                <input type="text" id="jawaban14">
+                <button id="checkjawaban14">Check</button>
+            </div>
+        </div>
+
+        <div class="pertanyaan15" id="pertanyaan15">
+            <div class="image15">
+                <img src="./asset/image/gas.png" alt="Gas">
+                <p>+</p>
+                <img src="./asset/image/tokopedia.png" alt="Tokopedia">
+            </div>
+            <div class="jawaban15">
+                <input type="text" id="jawaban15">
+                <button id="checkjawaban15">Check</button>
+            </div>
+        </div>
+
+    </div>
 
     <!-- Script Start Here -->
     <script src="asset/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Script End Here -->
 </body>
 

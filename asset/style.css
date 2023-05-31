@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
 }
 
 body {
@@ -149,20 +150,1099 @@ body {
     background-color: #282a37;
     display: none;
     width: 450px;
-    height: 250px;
+    height: 350px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.inputName p{
+.inputName h1{
     text-align: center;
     font-family: 'Poppins';
-    font-size: 20px;
     color: #fff;
+}
+
+.inputName img{
+    width: 85px;
+}
+
+.inputName input{
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.inputName button{
+    padding: 10px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Container Attention */
+.attention{
+    background-color: #282a37;
+    display: none;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.attention h1{
+    text-align: center;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+.attention p {
+    color: #fff;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 15px;
+}
+
+.attention button{
+    margin-top: 20px;
+    padding: 10px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;
 }
 
 /* Container Guess Image */
 .guessImage{
-    width: 100vw;
-    height: 100vh;
+    width: 1000px;
+    height: 570px;
+    display: none;
+    /* background-color: red; */
+    padding: 30px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.guessImage .timer{
+    width: 100px;
+    height: 25px;
+    background-color: #282a37;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 150px;
+}
+
+.guessImage .nyawa{
+    width: 100px;
+    height: 25px;
+    background-color: #282a37;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+.guessImage .timer p, .nyawa p{
+    color: #fff;
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 20px;
+}
+
+.guessImage .timer ion-icon, .nyawa ion-icon{
+    color: #1db4f5;
+    font-size: 30px;
+    padding-right: 8px;
+}
+
+/* Pertanyaan 1 */
+
+.pertanyaan1{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+}
+
+.pertanyaan1 .image1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan1 img{
+    width: 240px;
+}
+
+.pertanyaan1 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban1{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban1 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban1 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 2 */
+.pertanyaan2{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan2 .image2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan2 img{
+    width: 240px;
+}
+
+.pertanyaan2 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban2{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban2 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban2 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 3 */
+.pertanyaan3{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan3 .image3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan3 img{
+    width: 240px;
+}
+
+.pertanyaan3 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban3{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban3 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban3 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 4 */
+.pertanyaan4{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan4 .image4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan4 img{
+    width: 240px;
+}
+
+.pertanyaan4 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban4{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban4 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban4 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 5 */
+.pertanyaan5{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan5 .image5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan5 img{
+    width: 240px;
+}
+
+.pertanyaan5 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban5{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban5 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban5 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 6 */
+.pertanyaan6{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan6 .image6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan6 img{
+    width: 240px;
+}
+
+.pertanyaan6 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban6{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban6 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban6 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 7 */
+.pertanyaan7{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan7 .image7{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan7 img{
+    width: 240px;
+}
+
+.pertanyaan7 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban7{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban7 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban7 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 8 */
+.pertanyaan8{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan8 .image8{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan8 img{
+    width: 240px;
+}
+
+.pertanyaan8 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban8{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban8 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban8 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 9 */
+.pertanyaan9{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan9 .image9{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan9 img{
+    width: 240px;
+}
+
+.pertanyaan9 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban9{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban9 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban9 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 10 */
+.pertanyaan10{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan10 .image10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan10 .stonk{
+    width: 240px;
+}
+
+.pertanyaan10 .letkol{
+    height: 150px;
+}
+
+.pertanyaan10 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban10{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban10 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban10 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 11 */
+.pertanyaan11{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan11 .image11{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan11 img{
+    width: 240px;
+}
+
+.pertanyaan11 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban11{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban11 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban11 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 12 */
+.pertanyaan12{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan12 .image12{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan12 img{
+    width: 240px;
+}
+
+.pertanyaan12 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban12{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban12 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban12 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 13 */
+.pertanyaan13{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan13 .image13{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan13 img{
+    width: 240px;
+}
+
+.pertanyaan13 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban13{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban13 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban13 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 14 */
+.pertanyaan14{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan14 .image14{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pertanyaan14 img{
+    width: 240px;
+}
+
+.pertanyaan14 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban14{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban14 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban14 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
+}
+
+/* Pertanyaan 15 */
+.pertanyaan15{
+    background-color: #282a37;
+    width: 1100px;
+    height: 450px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: none;
+    position: relative;
+}
+
+.pertanyaan15 .image15{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+}
+
+.pertanyaan15 img{
+    width: 240px;
+}
+
+.pertanyaan15 p{
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 28px;
+}
+
+.jawaban15{
+    width: 450px;
+    height: 60px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 30%;
+}
+
+.jawaban15 input{
+    height: 25px;
+    width: 250px;
+    background-color: #3e3f4b;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #323645;
+    color: #fff;
+    font-family: 'Poppins';
+    padding: 10px;
+}
+
+.jawaban15 button{
+    padding: 12px 50px;
+    background-color: #1db4f5;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    color: #fff;
+    cursor: pointer;   
 }
