@@ -984,3 +984,10 @@ checkjawaban15.addEventListener('click', () => {
         }
     }
 });
+
+
+// Go To About Page
+let goToAbout = document.getElementById('goToAbout');
+goToAbout.addEventListener('click', () => {
+    window.location.href = 'about.html';
+})
