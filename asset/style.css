@@ -166,3 +166,66 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+/*about*/
+
+.card {
+    width: 150px;
+    height: 200px;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 20px;
+    background-color: #282a37;
+    box-shadow: 3px 5px 10px rgba(4, 24, 124, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .profile-picture {
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    margin: 0 auto;
+  }
+  
+  .card img {
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 40%;
+    height: 40%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card h2 {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+  
+  .card p {
+    font-size: 12px;
+    color: #979a9c;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    color: #979a9c;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card ul li {
+    font-size: 12px;
+  }
+  
+  .card ul li strong {
+    font-weight: bold;
+  }
+  
